@@ -14,4 +14,5 @@ This project features a native and lite APP to control the part of Sony Noise-ca
 As the [SonyHeadphonesClient Headset Reports](https://github.com/Plutoberth/SonyHeadphonesClient/issues/29).
 ## Compiling
 - Open `SonyHeadphonesClient.sln` with Visual Studio.
+- Install H.NotifyIcon.WinUI in NuGet.
 - Build the solution on the correctly platform directly.
