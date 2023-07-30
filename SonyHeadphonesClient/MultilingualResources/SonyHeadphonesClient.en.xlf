@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en" original="SONYHEADPHONESCLIENT/STRINGS/EN-US/RESOURCES.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="1.0.0.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="SONYHEADPHONESCLIENT/STRINGS/EN-US/RESOURCES.RESW" datatype="resx">
+        <trans-unit id="AmbientSoundControl.Header" translate="yes" xml:space="preserve">
+          <source>Ambient Sound Control</source>
+          <target state="new">Ambient Sound Control</target>
+        </trans-unit>
+        <trans-unit id="amsSlider.Header" translate="yes" xml:space="preserve">
+          <source>Ambient Sound</source>
+          <target state="new">Ambient Sound</target>
+        </trans-unit>
+        <trans-unit id="AutoRun.Text" translate="yes" xml:space="preserve">
+          <source>auto-startup</source>
+          <target state="new">auto-startup</target>
+        </trans-unit>
+        <trans-unit id="BlueToothError.Text" translate="yes" xml:space="preserve">
+          <source>Bluetooth is abnormal, please check whether Bluetooth is turned on.</source>
+          <target state="new">Bluetooth is abnormal, please check whether Bluetooth is turned on.</target>
+        </trans-unit>
+        <trans-unit id="ChooseDevice.Text" translate="yes" xml:space="preserve">
+          <source>Choose a device to connect.</source>
+          <target state="new">Choose a device to connect.</target>
+        </trans-unit>
+        <trans-unit id="ConnectFailed.Text" translate="yes" xml:space="preserve">
+          <source>Connection failed, please check the connected device and try again.</source>
+          <target state="new">Connection failed, please check the connected device and try again.</target>
+        </trans-unit>
+        <trans-unit id="disconnectButton.Content" translate="yes" xml:space="preserve">
+          <source>disconnect</source>
+          <target state="new">disconnect</target>
+        </trans-unit>
+        <trans-unit id="Exit.Text" translate="yes" xml:space="preserve">
+          <source>Exit</source>
+          <target state="new">Exit</target>
+        </trans-unit>
+        <trans-unit id="FocusOnVoice.Header" translate="yes" xml:space="preserve">
+          <source>Focus On Voice</source>
+          <target state="new">Focus On Voice</target>
+        </trans-unit>
+        <trans-unit id="NoDevices.Text" translate="yes" xml:space="preserve">
+          <source>No devices available.</source>
+          <target state="new">No devices available.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

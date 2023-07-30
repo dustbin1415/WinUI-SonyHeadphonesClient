@@ -13,11 +13,11 @@
         <StackPanel>
             <TextBlock x:Name="title" FontSize="18" Margin="15,10,10,10"/>
             <StackPanel Padding="20,5">
-                <ToggleSwitch x:Name="AmbientSoundControl" Header="环境声音控制" HorizontalAlignment="Left" Toggled="amsToggled"/>
-                <Slider x:Name="amsSlider" Width="310" Minimum="1" Maximum="20" Header="环境噪音"  HorizontalAlignment="Left"
+                <ToggleSwitch x:Name="AmbientSoundControl" x:Uid="AmbientSoundControl" HorizontalAlignment="Left" Toggled="amsToggled"/>
+                <Slider x:Name="amsSlider" x:Uid="amsSlider" Width="310" Minimum="1" Maximum="20" HorizontalAlignment="Left"
                 ValueChanged="amsSlider_ValueChanged"/>
-                <ToggleSwitch x:Name="FocusOnVoice" Header="关注语音" HorizontalAlignment="Left" Toggled="FocusOnVoiceToggled"/>
-                <Button x:Name="disconnectButton" HorizontalAlignment="Right" Click="Disconnect">断开当前设备连接</Button>
+                <ToggleSwitch x:Name="FocusOnVoice" x:Uid="FocusOnVoice" HorizontalAlignment="Left" Toggled="FocusOnVoiceToggled"/>
+                <Button x:Name="disconnectButton" x:Uid="disconnectButton" HorizontalAlignment="Right" Click="Disconnect"/>
             </StackPanel>
         </StackPanel>
     </Grid>

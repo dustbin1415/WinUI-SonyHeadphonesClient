@@ -19,16 +19,16 @@
                 <DataTemplate x:Key="ContactListViewTemplate" x:DataType="ApiHeadphone:Devices">
                     <StackPanel>
                         <TextBlock x:Name="DeviceName" Text="{x:Bind name}" x:Phase="1" Margin="0,5,0,5"/>
-                        <TextBlock x:Name="ConnectFailed" HorizontalAlignment="Left" Visibility="{x:Bind ConnectFailed}"  Margin="0,0,0,10">连接失败,请检查连接设备后重试</TextBlock>
+                        <TextBlock x:Name="ConnectFailed" x:Uid="ConnectFailed" HorizontalAlignment="Left" Visibility="{x:Bind ConnectFailed}"  Margin="0,0,0,10"/>
                     </StackPanel>
                 </DataTemplate>
             </Grid.Resources>
             <views:TaskbarIcon x:Name="TaskbarIconView" />
             <StackPanel>
-                <TextBlock Text="选择要连接的设备" FontSize="18" Margin="15,10,10,10"/>
-                <TextBlock x:Name="NoDevices" Text="无可用设备" Margin="15,0,10,10" Visibility="Collapsed"/>
+                <TextBlock x:Uid="ChooseDevice" FontSize="18" Margin="15,10,10,10"/>
+                <TextBlock x:Name="NoDevices" x:Uid="NoDevices" Margin="15,0,10,10" Visibility="Collapsed"/>
                 <Grid Height="230" x:Name="BluetoothError"  Visibility="Collapsed">
-                    <TextBlock Text="蓝牙异常，请检查蓝牙是否打开" FontSize="20" Margin="15,0,10,10"
+                    <TextBlock x:Uid="BlueToothError" FontSize="20" Margin="15,0,10,10"
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Grid>
                 <ListView x:Name="DevicesList" Height="230" ItemClick="DeviceChoose"

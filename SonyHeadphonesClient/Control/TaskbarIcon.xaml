@@ -11,9 +11,9 @@
     <Grid>
         <Grid.Resources>
             <MenuFlyout x:Key="TaskbarIconFlyout" >
-                <ToggleMenuFlyoutItem x:Name="AutoStart" Command="{x:Bind AutoRuntCommand_}" Text="开机自启"/>
+                <ToggleMenuFlyoutItem x:Name="AutoStart" Command="{x:Bind AutoRuntCommand_}" x:Uid="AutoRun"/>
                 <MenuFlyoutSeparator />
-                <MenuFlyoutItem Command="{x:Bind ExitCommand_}" Text="退出"/>
+                <MenuFlyoutItem Command="{x:Bind ExitCommand_}" x:Uid="Exit"/>
             </MenuFlyout>
         </Grid.Resources>
         <tb:TaskbarIcon
