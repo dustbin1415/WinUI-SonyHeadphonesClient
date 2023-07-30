@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="SonyHeadphonesClient.Pages.SettingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SonyHeadphonesClient.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Transparent">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock x:Name="title" FontSize="18" Margin="15,10,10,10"/>
+            <StackPanel Padding="20,5">
+                <ToggleSwitch x:Name="AmbientSoundControl" Header="环境声音控制" HorizontalAlignment="Left" Toggled="amsToggled"/>
+                <Slider x:Name="amsSlider" Width="310" Minimum="1" Maximum="20" Header="环境噪音"  HorizontalAlignment="Left"
+                ValueChanged="amsSlider_ValueChanged"/>
+                <ToggleSwitch x:Name="FocusOnVoice" Header="关注语音" HorizontalAlignment="Left" Toggled="FocusOnVoiceToggled"/>
+                <Button x:Name="disconnectButton" HorizontalAlignment="Right" Click="Disconnect">断开当前设备连接</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

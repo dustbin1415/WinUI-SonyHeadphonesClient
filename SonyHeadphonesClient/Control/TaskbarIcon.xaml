@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="SonyHeadphonesClient.Control.TaskbarIcon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SonyHeadphonesClient.Control"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:tb="using:H.NotifyIcon">
+    <Grid>
+        <Grid.Resources>
+            <MenuFlyout x:Key="TaskbarIconFlyout" >
+                <ToggleMenuFlyoutItem x:Name="AutoStart" Command="{x:Bind AutoRuntCommand_}" Text="开机自启"/>
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem Command="{x:Bind ExitCommand_}" Text="退出"/>
+            </MenuFlyout>
+        </Grid.Resources>
+        <tb:TaskbarIcon
+	    	x:Name="TaskbarIconView"
+            ContextFlyout="{StaticResource TaskbarIconFlyout}"
+            ToolTipText="Sony Headphones Control"
+	        LeftClickCommand="{x:Bind  LeftClickCommand_}"
+            MenuActivation="RightClick">
+        </tb:TaskbarIcon>
+    </Grid>
+</UserControl>
