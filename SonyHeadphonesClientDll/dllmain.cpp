@@ -1,12 +1,4 @@
-﻿// dllmain.cpp : 定义 DLL 应用程序的入口点。
-#include "pch.h"
-
-#include <stdio.h>
-#include <memory>
-#include "WindowsBluetoothConnector.h"
-#include "CommandSerializer.h"
-#include "BluetoothWrapper.h"
-#include "Headphones.h"
+﻿#include<dllmain.h>
 
 void BluetoothWrapper::real_disconnect() noexcept
 {
@@ -22,21 +14,6 @@ bool BluetoothWrapper::refresh() noexcept
 	Sleep(500);
 	return success;
 }
-
-std::unique_ptr<IBluetoothConnector> connector = std::make_unique<WindowsBluetoothConnector>();
-BluetoothWrapper _bt(std::move(connector));
-Headphones _headphone(_bt);
-std::vector<BluetoothDevice> wrap;
-
-struct Devices
-{
-	struct Device
-	{
-		char name[100];
-		char mac[18];
-	};
-	Device device[10];
-};
 
 extern "C"
 {

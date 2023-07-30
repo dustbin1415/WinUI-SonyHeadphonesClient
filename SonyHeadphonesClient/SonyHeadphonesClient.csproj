@@ -9,16 +9,16 @@
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <UseWinUI>true</UseWinUI>
 	<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
-	<ApplicationIcon>favicon.ico</ApplicationIcon>
+	<ApplicationIcon>Image\favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="DarkIcon.ico" />
     <None Remove="LightIcon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DarkIcon.ico" />
-    <Content Include="favicon.ico" />
-    <Content Include="LightIcon.ico">
+    <Content Include="Image\DarkIcon.ico" />
+    <Content Include="Image\favicon.ico" />
+    <Content Include="Image\LightIcon.ico">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

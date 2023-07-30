@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="pch.h">
+    <ClInclude Include="dllmain.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Client\BluetoothWrapper.h">
@@ -27,28 +24,16 @@
     <ClInclude Include="Client\ByteMagic.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Client\CascadiaCodeFont.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Client\CommandSerializer.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Client\Constants.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Client\Exceptions.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Client\Headphones.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Client\IBluetoothConnector.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Client\SingleInstanceFuture.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Client\TimedMessageQueue.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Client\windows\WindowsBluetoothConnector.h">
@@ -59,25 +44,16 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Client\BluetoothWrapper.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Client\ByteMagic.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Client\CascadiaCodeFont.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Client\CommandSerializer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Client\Headphones.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Client\TimedMessageQueue.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Client\windows\WindowsBluetoothConnector.cpp">
