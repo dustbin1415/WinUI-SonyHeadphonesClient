@@ -1,6 +1,6 @@
 # WinUI-SonyHeadphonesClient
 [中文](/README-CN.md)  
-This project features a native and lite APP to control the part of Sony Noise-canceling headphones on Windows 11 with WinUI3.
+This project features a native and lite APP to control the part of Sony Noise-canceling headphones on Windows 11 with WinUI3.   
 ![ConnectPage](/static/ConnectPage-en.png)
 ![SettingPage](/static/SettingPage-en.png)
 ## Power by
