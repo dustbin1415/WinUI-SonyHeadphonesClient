@@ -29,9 +29,9 @@ namespace SonyHeadphonesClient.Control
             var Theme = Application.Current.RequestedTheme;
             Console.WriteLine(System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase);
             if (Theme == ApplicationTheme.Light)
-                TaskbarIconView.IconSource = new BitmapImage(new Uri(System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase + "LightIcon.ico"));
+                TaskbarIconView.IconSource = new BitmapImage(new Uri(System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase + "Image/LightIcon.ico"));
             else
-                TaskbarIconView.IconSource = new BitmapImage(new Uri(System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase + "DarkIcon.ico"));
+                TaskbarIconView.IconSource = new BitmapImage(new Uri(System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase + "Image/DarkIcon.ico"));
             AutoStartItem = FindName("AutoStart") as ToggleMenuFlyoutItem;
             AutoRuntCommand_ = new AutoRuntCommand(CheckAutoStart);
             CheckAutoStart();
