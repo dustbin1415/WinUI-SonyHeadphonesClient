@@ -14,7 +14,7 @@
             <TextBlock x:Name="title" FontSize="18" Margin="15,10,10,10"/>
             <StackPanel Padding="20,5">
                 <ToggleSwitch x:Name="AmbientSoundControl" x:Uid="AmbientSoundControl" HorizontalAlignment="Left" Toggled="amsToggled"/>
-                <Slider x:Name="amsSlider" x:Uid="amsSlider" Width="310" Minimum="1" Maximum="20" HorizontalAlignment="Left"
+                <Slider x:Name="amsSlider" x:Uid="amsSlider" Width="310" Minimum="-1" Maximum="20" HorizontalAlignment="Left" Value="-1" ThumbToolTipValueConverter="{x:Bind SliderText_}"
                 ValueChanged="amsSlider_ValueChanged"/>
                 <ToggleSwitch x:Name="FocusOnVoice" x:Uid="FocusOnVoice" HorizontalAlignment="Left" Toggled="FocusOnVoiceToggled"/>
                 <Button x:Name="disconnectButton" x:Uid="disconnectButton" HorizontalAlignment="Right" Click="Disconnect"/>

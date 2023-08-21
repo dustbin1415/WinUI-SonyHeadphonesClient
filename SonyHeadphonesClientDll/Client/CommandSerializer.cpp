@@ -4,7 +4,7 @@ constexpr unsigned char ESCAPED_BYTE_SENTRY = 61;
 constexpr unsigned char ESCAPED_60 = 44;
 constexpr unsigned char ESCAPED_61 = 45;
 constexpr unsigned char ESCAPED_62 = 46;
-constexpr int MAX_STEPS_WH_1000_XM3 = 19;
+constexpr int MAX_STEPS_WH_1000_XM4 = 21;
 
 namespace CommandSerializer
 {
@@ -156,7 +156,7 @@ namespace CommandSerializer
 	NC_DUAL_SINGLE_VALUE getDualSingleForAsmLevel(char asmLevel)
 	{
 		NC_DUAL_SINGLE_VALUE val = NC_DUAL_SINGLE_VALUE::OFF;
-		if (asmLevel > MAX_STEPS_WH_1000_XM3)
+		if (asmLevel > MAX_STEPS_WH_1000_XM4)
 		{
 			throw std::runtime_error("Exceeded max steps");
 		}
@@ -181,7 +181,7 @@ namespace CommandSerializer
 		ret.push_back(static_cast<unsigned char>(getDualSingleForAsmLevel(asmLevel)));
 		ret.push_back(static_cast<unsigned char>(asmSettingType));
 		ret.push_back(static_cast<unsigned char>(asmId));
-		ret.push_back(asmLevel);
+		ret.push_back(asmLevel - 1);
 		return ret;
 	}
 

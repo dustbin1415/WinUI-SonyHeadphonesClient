@@ -1,10 +1,13 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
+using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Navigation;
 using SonyHeadphonesClient.API;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Windows.ApplicationModel.Resources;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -18,6 +21,7 @@ namespace SonyHeadphonesClient.Pages
     {
 
         private CancellationTokenSource tokenSource = new CancellationTokenSource();
+        public SliderText SliderText_ = new SliderText();
         public SettingPage()
         {
             CancellationToken cancellationToken = tokenSource.Token;
@@ -50,12 +54,12 @@ namespace SonyHeadphonesClient.Pages
                 ToggleSwitch FocusOnVoice = this.FindName("FocusOnVoice") as ToggleSwitch;
                 if (FocusOnVoice != null)
                 {
-                    if (slider.Value > 1)
+                    if (slider.Value > 0)
                         FocusOnVoice.IsEnabled = true;
                     else
                         FocusOnVoice.IsEnabled = false;
                 }
-                Headphone.SetAsmLevel((int)slider.Value - 1);
+                Headphone.SetAsmLevel((int)slider.Value + 1);
             }
         }
 
@@ -97,6 +101,32 @@ namespace SonyHeadphonesClient.Pages
         private void Disconnect(object sender, RoutedEventArgs e)
         {
             tokenSource.Cancel();
+        }
+    }
+    public class SliderText : IValueConverter
+    {
+        ResourceLoader resourceLoader = new ResourceLoader();
+
+        private object Change(double val)
+        {
+            if (val > 0)
+                return val;
+            else if (val == 0)
+                return resourceLoader.GetString("ReduceWindNoise");
+            else if (val == -1)
+                return resourceLoader.GetString("Denoise");
+            return val;
+        }
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            return Change((double)value);
+            throw new NotImplementedException();
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            return Change((double)value);
+            throw new NotImplementedException();
         }
     }
 }

@@ -135,6 +135,9 @@
   <data name="ConnectFailed.Text" xml:space="preserve">
     <value>Connection failed, please check the connected device and try again.</value>
   </data>
+  <data name="Denoise" xml:space="preserve">
+    <value>Denoise</value>
+  </data>
   <data name="disconnectButton.Content" xml:space="preserve">
     <value>Disconnect</value>
   </data>
@@ -146,5 +149,8 @@
   </data>
   <data name="NoDevices.Text" xml:space="preserve">
     <value>No devices available.</value>
+  </data>
+  <data name="ReduceWindNoise" xml:space="preserve">
+    <value>Reduce wind noise</value>
   </data>
 </root>

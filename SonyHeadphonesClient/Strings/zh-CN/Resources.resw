@@ -135,6 +135,9 @@
   <data name="ConnectFailed.Text" xml:space="preserve">
     <value>连接失败,请检查连接设备后重试</value>
   </data>
+  <data name="Denoise" xml:space="preserve">
+    <value>降噪</value>
+  </data>
   <data name="disconnectButton.Content" xml:space="preserve">
     <value>断开当前设备连接</value>
   </data>
@@ -146,5 +149,8 @@
   </data>
   <data name="NoDevices.Text" xml:space="preserve">
     <value>无可用设备</value>
+  </data>
+  <data name="ReduceWindNoise" xml:space="preserve">
+    <value>降低风噪</value>
   </data>
 </root>
